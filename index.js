@@ -3,9 +3,12 @@ const path = require('path')
 require('dotenv').config();
 
 
-
 //App express
 const app = express();
+
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
 
 
 //Node serve
